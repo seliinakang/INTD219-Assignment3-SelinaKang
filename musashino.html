@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            animation: fadeInAnimation ease 1.25s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+  
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div id="page-animation">
+<nav>
     <a href="/menu.html" class="grid-menu-icon">
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-1"></div>
+          <div class="square square-2"></div>
+          <div class="square square-3"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-4"></div>
+          <div class="square square-5"></div>
+          <div class="square square-6"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-7"></div>
+          <div class="square square-8"></div>
+          <div class="square square-9"></div>
         </div>
+        <style id="logoStyles"></style>
       </a>
-      <a href="home.html"><h1 class="h1">SOU FUJIMOTO</h1></a>
-    
+      <a href="home.html"><h1 class="h1">SOU FUJIMOTO ARCHITECTS</h1></a>
+</nav>    
 
     <h1 class="title2">MUSASHINO ART UNIVERSITY MUSEUM & LIBRARY</h1>
     <p class="place2">Tokyo, Japan</p>
@@ -35,33 +55,41 @@
     <p class="des2">This project is a new library for one of the distinguished art universities in Japan. It involves designing a new library building and refurbishing the existing building into an art gallery, which will ultimately create a new integration of the Library and the Art Gallery. The project described hereinafter is the plan of the new library which sits within the first phase of the total development. Acting as a huge ark, a total of 200,000 units, of which 100,000 will be out in an open-archive, while the other half within closed-archive, rests within this double-storey library of 6,500 ㎡ in floor area.</p>
 
     <div class="arrow-container">
-        <a href="larbre.html"><img src="left-arrow.svg" class="left-arrow"></a>
-        <a href="shiroiya.html"><img src="right-arrow.svg" class="right-arrow"></a>
+        <a href="larbre.html"><img src="public/imgs/left-arrow.svg" class="left-arrow"></a>
+        <a href="shiroiya.html"><img src="public/imgs/right-arrow.svg" class="right-arrow"></a>
     </div>
     
     <div class="grid2">
         <div class="grid-item2">
-            <img src="musashino art university cover.webp">
+            <img src="public/imgs/musashino art university cover.webp">
         </div>
         <div class="grid-item2">
-                <img src="musashino2.jpeg">
+            <section class="section fadeup">
+                <img src="public/imgs/musashino2.jpeg">
+            </section>
         </div>
         <div class="grid-item2">
-            <img src="musashino3.webp">
+            <section class="section fadeup">
+                <img src="public/imgs/musashino3.webp">
+            </section>
         </div>
         <div class="grid-item2">
-            <img src="musashino4.jpeg">
+            <section class="section fadeup">
+                <img src="public/imgs/musashino4.jpeg">
+            </section>
         </div>
         <div class="grid-item2">
-            <img src="musashino5.jpeg">
+                <img src="public/imgs/musashino5.jpeg">
         </div>
         <div class="grid-item2">
-            <img src="musashino6.webp">
+            <section class="section fadeup">
+                <img src="public/imgs/musashino6.webp">
+            </section>
         </div>
         
     </div>
     <script src="script.js"></script>
-</div>
-    <a href="https://www.instagram.com/sou_fujimoto/"><img src="instagram.svg" class="instagram"></a>
+
+    <a href="https://www.instagram.com/sou_fujimoto/"><img src="public/imgs/instagram.svg" class="instagram"></a>
 </body>
 </html>

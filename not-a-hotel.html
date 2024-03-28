@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            animation: fadeInAnimation ease 1.25s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+  
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div id="page-animation">
+<nav>
     <a href="/menu.html" class="grid-menu-icon">
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-1"></div>
+          <div class="square square-2"></div>
+          <div class="square square-3"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-4"></div>
+          <div class="square square-5"></div>
+          <div class="square square-6"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-7"></div>
+          <div class="square square-8"></div>
+          <div class="square square-9"></div>
         </div>
+        <style id="logoStyles"></style>
       </a>
-      <a href="home.html"><h1 class="h1">SOU FUJIMOTO</h1></a>
-   
+      <a href="home.html"><h1 class="h1">SOU FUJIMOTO ARCHITECTS</h1></a>
+</nav>   
 
     <h1 class="title14">NOT A HOTEL ISHIGAKI EARTH</h1>
     <p class="place14">Ishigaki Island, Japan</p>
@@ -35,45 +55,61 @@
     <p class="des14">Not A Hotel Ishigaki was created to accommodate up to 10 guests while remaining "connected to the earth" and is situated on the picturesque island of Ishigaki, which is part of Okinawa in southwest Japan. The structure of the rental hotel villa will resemble a disc with a sloping green roof on top. Large circular holes that will encircle a tree and pond at the lowest part of the roof, surrounded by a walkable meadow-lined roof, are depicted in the hotel-cum-villa's renderings. Since it was not intended to have a front or rear, the layout of the house will provide for views of the surrounding area.</p>
 
     <div class="arrow-container">
-        <a href="forest.html"><img src="left-arrow.svg" class="left-arrow"></a>
-        <a href="house-n.html"><img src="right-arrow.svg" class="right-arrow"></a>
+        <a href="forest.html"><img src="public/imgs/left-arrow.svg" class="left-arrow"></a>
+        <a href="house-n.html"><img src="public/imgs/right-arrow.svg" class="right-arrow"></a>
     </div>
     <div class="grid14">
         <div class="grid-item14">
-            <img src="not a hotel cover.webp">
+            <img src="public/imgs/not a hotel cover.webp">
         </div>
         <div class="grid-item14">
-            <img src="notahotel2.webp">
+            <section class="section fadeup">
+                <img src="public/imgs/notahotel2.webp">
+            </section>
         </div>
         <div class="grid-item14">
-            <img src="notahotel3.avif">
+            <section class="section fadeup">
+                <img src="public/imgs/notahotel3.avif">
+            </section>
         </div>
         <div class="grid-item14">
-            <img src="notahotel4.webp">
+            <section class="section fadeup">
+                <img src="public/imgs/notahotel4.webp">
+            </section>
         </div>
         <div class="grid-item14">
-            <img src="notahotel5.avif">
+            <section class="section fadeup">
+                <img src="public/imgs/notahotel5.avif">
+            </section>
         </div>
         <div class="grid-item14">
-            <img src="notahotel6.avif">
+            <img src="public/imgs/notahotel6.avif">
         </div>
         <div class="grid-item14">
-            <img src="notahotel7.png">
+            <section class="section fadeup">
+                <img src="public/imgs/notahotel7.png">
+            </section>
         </div>
         <div class="grid-item14">
-            <img src="notahotel8.png">
+            <section class="section fadeup">
+                <img src="public/imgs/notahotel8.png">
+            </section>
         </div>
         <div class="grid-item14">
-            <img src="notahotel9.avif">
+            <section class="section fadeup">
+                <img src="public/imgs/notahotel9.avif">
+            </section>
         </div>
         <div class="grid-item14">
-            <img src="notahotel10.png">
+            <section class="section fadeup">
+                <img src="public/imgs/notahotel10.png">
+            </section>
         </div>
         
         
     </div>
     <script src="script.js"></script> 
-</div>   
-    <a href="https://www.instagram.com/sou_fujimoto/"><img src="instagram.svg" class="instagram"></a>
+
+    <a href="https://www.instagram.com/sou_fujimoto/"><img src="public/imgs/instagram.svg" class="instagram"></a>
 </body>
 </html>

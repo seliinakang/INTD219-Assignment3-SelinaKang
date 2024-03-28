@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const gridMenuIcon = document.querySelector('.grid-menu-icon');
     const squares = document.querySelectorAll('.square');
-    const colors = ['#ECDFD3', '#949897', '#C3A48C', '#748486', '#A6A998', '#E5E3D7', '#B0A6B6', '#CBC4BC', '#A6A998'];
+    const colors = ['#D7B8B3', '#949897', '#C3A48C', '#748486', '#A6A998', '#D6D3C2', '#B0A6B6', '#CBC4BC', '#A6A998'];
   
     function changeColor() {
       squares.forEach(function(square) {
@@ -31,14 +31,56 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  const observer = new IntersectionObserver(entries => {
+  function setStyles(){
+    var logoStyles = document.querySelector("#logoStyles");
+    var menuIcon = document.querySelector(".grid-menu-icon");
+    if (logoStyles) {
+
+    } else {
+      menuIcon.append()
+    }
+  }
+  
+  document.addEventListener("mousemove", (e) => {
+    const logoStyles = document.querySelector("#logoStyles");
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    const quadrantWidth = screenWidth / 3;
+    const quadrantHeight = screenHeight / 3;
+    let x = e.clientX;
+    let y = e.clientY;
+    let quadrantX = Math.floor(x / quadrantWidth);
+    let quadrantY = Math.floor(y / quadrantHeight);
+    let squareNumber = (quadrantY * 3) + quadrantX + 1;
+    logoStyles.innerHTML = `.square-${squareNumber}{background:#1E1E1E!important}`;
+  });
+
+  const observerOptions = {
+    root: null,
+    threshold: 0,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('page-animation');
-      }
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+        }
     });
-  });
-  const viewbox = document.querySelectorAll('#page-animation');
-  viewbox.forEach(page => {
-    observer.observe(page);
-  });
+}, observerOptions);
+
+window.addEventListener('DOMContentLoaded', (event) => {
+
+const sections = Array.from(document.getElementsByClassName('section'));
+
+for (let section of sections) {
+observer.observe(section);
+}
+
+});
+
+document.querySelector('.grid-menu-icon').addEventListener('click', function() {
+  document.querySelector('.menu').style.display = 
+  (document.querySelector('.menu').style.display == 'none') ? 'block' : 'none';
+});

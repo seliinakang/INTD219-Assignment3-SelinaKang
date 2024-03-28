@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            animation: fadeInAnimation ease 1.25s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+  
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div id="page-animation">
+<nav>
     <a href="/menu.html" class="grid-menu-icon">
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-1"></div>
+          <div class="square square-2"></div>
+          <div class="square square-3"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-4"></div>
+          <div class="square square-5"></div>
+          <div class="square square-6"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-7"></div>
+          <div class="square square-8"></div>
+          <div class="square square-9"></div>
         </div>
+        <style id="logoStyles"></style>
       </a>
-      <a href="home.html"><h1 class="h1">SOU FUJIMOTO</h1></a>
-    
+      <a href="home.html"><h1 class="h1">SOU FUJIMOTO ARCHITECTS</h1></a>
+</nav>    
 
     <h1 class="title7">'FOREST OF LIGHT' FOR SALONE DEL MOBILE</h1>
     <p class="place7">Milan, Italy</p>
@@ -35,36 +55,46 @@
     <p class="des7">Taking inspiration from the COS Spring Summer 2016 collection, 'Forest of Light' explores ideas of interaction and perspective; the darkened space is illuminated by towering cones of light that are designed to respond to visitors' movements. Specially-composed sounds, subtle fog and mirrored walls create an immersive, infinite landscape where the conical spotlights become abstracted trees in a shifting forest of light. Built in the 1930s by Italian architect Mario Cereghini, the installation is located in Cinema Arti in Milan's San Babila district. A former theatre, the now derelict venue has inspired the key aspects of Sou Fujimoto's design and provides an expansive backdrop to the installation.</p>
 
     <div class="arrow-container">
-        <a href="canopia.html"><img src="left-arrow.svg" class="left-arrow"></a>
-        <a href="not-a-hotel.html"><img src="right-arrow.svg" class="right-arrow"></a>
+        <a href="canopia.html"><img src="public/imgs/left-arrow.svg" class="left-arrow"></a>
+        <a href="not-a-hotel.html"><img src="public/imgs/right-arrow.svg" class="right-arrow"></a>
     </div>
     
     <div class="grid7">
         <div class="grid-item7">
-            <img src="forest of light cover.webp">
+            <img src="public/imgs/forest of light cover.webp">
         </div>
         <div class="grid-item7">
-                <img src="forest2.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/forest2.jpg">
+            </section>
         </div>
         <div class="grid-item7">
-            <img src="forest3.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/forest3.jpg">
+            </section>
         </div>
         <div class="grid-item7">
-            <img src="forest4.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/forest4.jpg">
+            </section>
         </div>
         <div class="grid-item7">
-            <img src="forest5.jpg">
+            <img src="public/imgs/forest5.jpg">
         </div>
         <div class="grid-item7">
-            <img src="forest6.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/forest6.jpg">
+            </section>
         </div>
         <div class="grid-item7">
-            <img src="forest7.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/forest7.jpg">
+            </section>
         </div>
         
     </div>
     <script src="script.js"></script>
-</div>
-    <a href="https://www.instagram.com/sou_fujimoto/"><img src="instagram.svg" class="instagram"></a>
+
+    <a href="https://www.instagram.com/sou_fujimoto/"><img src="public/imgs/instagram.svg" class="instagram"></a>
 </body>
 </html>

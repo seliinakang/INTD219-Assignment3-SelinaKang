@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            animation: fadeInAnimation ease 1.25s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+  
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div id="page-animation">
+
+<nav>
     <a href="/menu.html" class="grid-menu-icon">
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-1"></div>
+          <div class="square square-2"></div>
+          <div class="square square-3"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-4"></div>
+          <div class="square square-5"></div>
+          <div class="square square-6"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-7"></div>
+          <div class="square square-8"></div>
+          <div class="square square-9"></div>
         </div>
+        <style id="logoStyles"></style>
       </a>
-      <a href="home.html"><h1 class="h1">SOU FUJIMOTO</h1></a>
-    
+      <a href="home.html"><h1 class="h1">SOU FUJIMOTO ARCHITECTS</h1></a>
+</nav>    
 
     <h1 class="title12">FLOWING CLOUD PAVILION</h1>
     <p class="place12">Tonglu County, Hangzhou, Zhejiang, China</p>
@@ -35,44 +56,60 @@
     <p class="des12">The location itself served as inspiration for the design, particularly the clouds and fog that dispersed over the settlement. They resembled buildings suspended in midair, or more accurately, roofs linking surrounding scenery, structures, and the natural world. The environment was incredibly vibrant and bright due to the continuous terraced fields, which also formed an architectural picture. Like a cloud, a floating canopy that embraces and blends with the scenery.</p>
 
     <div class="arrow-container">
-        <a href="beton-hala.html"><img src="left-arrow.svg" class="left-arrow"></a>
-        <a href="serpentine.html"><img src="right-arrow.svg" class="right-arrow"></a>
+        <a href="beton-hala.html"><img src="public/imgs/left-arrow.svg" class="left-arrow"></a>
+        <a href="serpentine.html"><img src="public/imgs/right-arrow.svg" class="right-arrow"></a>
     </div>
     
     <div class="grid12">
         <div class="grid-item12">
-            <img src="flowing cloud cover.webp">
+                <img src="public/imgs/flowing cloud cover.webp">
         </div>
         <div class="grid-item12">
-            <img src="flowing2.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/flowing2.jpg">
+            </section>
         </div>
         <div class="grid-item12">
-            <img src="flowing3.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/flowing3.jpg">
+            </section>
         </div>
         <div class="grid-item12">
-            <img src="flowing4.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/flowing4.jpg">
+            </section>
         </div>
         <div class="grid-item12">
-            <img src="flowing5.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/flowing5.jpg">
+            </section>
         </div>
         <div class="grid-item12">
-            <img src="flowing6.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/flowing6.jpg">
+            </section>
         </div>
         <div class="grid-item12">
-            <img src="flowing7.jpg">
+                <img src="public/imgs/flowing7.jpg">
         </div>
         <div class="grid-item12">
-            <img src="flowing8.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/flowing8.jpg">
+            </section>
         </div>
         <div class="grid-item12">
-            <img src="flowing9.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/flowing9.jpg">
+            </section>
         </div>
         <div class="grid-item12">
-            <img src="flowing10.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/flowing10.jpg">
+            </section>
         </div>       
     </div>
     <script src="script.js"></script>
-</div>
-    <a href="https://www.instagram.com/sou_fujimoto/"><img src="instagram.svg" class="instagram"></a>
+
+    <a href="https://www.instagram.com/sou_fujimoto/"><img src="public/imgs/instagram.svg" class="instagram"></a>
 </body>
 </html>

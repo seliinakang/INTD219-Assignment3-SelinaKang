@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+      body {
+          animation: fadeInAnimation ease 1.25s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+      }
+  
+      @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+
+          100% {
+              opacity: 1;
+          }
+      }
+  </style>
 </head>
 
 <body>
-  <div id="page-animation">
+<nav>
     <a href="/menu.html" class="grid-menu-icon">
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-1"></div>
+          <div class="square square-2"></div>
+          <div class="square square-3"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-4"></div>
+          <div class="square square-5"></div>
+          <div class="square square-6"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-7"></div>
+          <div class="square square-8"></div>
+          <div class="square square-9"></div>
         </div>
+        <style id="logoStyles"></style>
       </a>
-      <a href="home.html"><h1 class="h1">SOU FUJIMOTO</h1></a>
+      <a href="home.html"><h1 class="h1">SOU FUJIMOTO ARCHITECTS</h1></a>
+</nav>
     <h1 class="about">ABOUT</h1>
     <div class="about-container">
         <p class="about-info">Sou Fujimoto is a visionary architect whose work redefines the boundaries of space, nature, and human experience. Born in Hokkaido, Japan, in 1971, Fujimoto's architectural journey has been characterized by a relentless pursuit of innovation and a deep reverence for the interplay between the built environment and the natural world.</p>
         <p class="about-info">Fujimoto's design philosophy is marked by a delicate balance between the organic and the man-made, where structures seamlessly blend with their surroundings, creating harmonious spaces that evoke a sense of wonder and contemplation. His creations often challenge conventional notions of form and function, inviting viewers to question and reimagine the possibilities of architecture.</p>
         <p class="about-info">With a portfolio spanning a diverse range of projects, from private residences to public installations, Fujimoto has garnered international acclaim for his groundbreaking designs. His notable works include the Serpentine Gallery Pavilion in London, the Musashino Art University Museum & Library in Tokyo, and the House NA in Tokyo, among many others.</p>
+      <section class="section fadeup">
         <p class="about-info">Fujimoto's visionary approach to architecture has earned him numerous awards, including the Golden Lion at the Venice Architecture Biennale and the Wall Street Journal Innovator Award. His work continues to inspire architects, designers, and enthusiasts worldwide, shaping the future of architectural discourse and practice.</p>
-    </div>
-    <img src="portrait.jpeg" class="portrait sticky-image">
+      </section>
+      </div>
+    <img src="public/imgs/portrait.jpeg" class="portrait">
     <script src="script.js"></script>
-  </div>
-    <a href="https://www.instagram.com/sou_fujimoto/"><img src="instagram.svg" class="instagram"></a>
+
+    <a href="https://www.instagram.com/sou_fujimoto/"><img src="public/imgs/instagram.svg" class="instagram"></a>
     
 </body>
+
+<footer>
+  <section class="section fadeup">
+  <div class="footer-container">
+      <a class="footer-links" href="home.html">Home</a>
+      <a class="footer-links" href="projects.html">Projects</a>
+      <a class="footer-links" href="about.html">About</a>
+      <a class="footer-links" href="contact.html">Contact</a>
+  </div>
+    <div class="copyright">
+      <p>&copy; 2024 Sou Fujimoto Architects. All rights reserved.</p>
+    </div>
+  </section> 
+</footer>
+
 </html>

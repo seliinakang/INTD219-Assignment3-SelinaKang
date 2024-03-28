@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            animation: fadeInAnimation ease 1.25s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+  
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div id="page-animation">
+<nav>
     <a href="/menu.html" class="grid-menu-icon">
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-1"></div>
+          <div class="square square-2"></div>
+          <div class="square square-3"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-4"></div>
+          <div class="square square-5"></div>
+          <div class="square square-6"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-7"></div>
+          <div class="square square-8"></div>
+          <div class="square square-9"></div>
         </div>
+        <style id="logoStyles"></style>
       </a>
-      <a href="home.html"><h1 class="h1">SOU FUJIMOTO</h1></a>
-    
+      <a href="home.html"><h1 class="h1">SOU FUJIMOTO ARCHITECTS</h1></a>
+</nav>    
 
     <h1 class="title10">HOUSE OF MUSIC</h1>
     <p class="place10">Budapest, Hungary</p>
@@ -35,54 +55,76 @@
     <p class="des10">The House of Music will provide its guests a singular artistic experience that combines architecture, landscape, and exhibition design to provide them fresh insights into the creation of music and how it affects our lives. The ambitious architectural project, headed by renowned Japanese designer Sou Fujimoto Architects, is a part of the Liget Budapest Project, Europe's largest cultural development, which aims to create and renovate several cultural institutions, as well as create new recreational opportunities and green spaces within Budapest's central City Park. The project will change the city's cultural experience. The initiative aims to enhance the musical experience by utilizing the interplay of light, sound, and nature.</p>
 
     <div class="arrow-container">
-        <a href="house-of-music.html"><img src="left-arrow.svg" class="left-arrow"></a>
-        <a href="house-na.html"><img src="right-arrow.svg" class="right-arrow"></a>
+        <a href="house-of-music.html"><img src="public/imgs/left-arrow.svg" class="left-arrow"></a>
+        <a href="house-na.html"><img src="public/imgs/right-arrow.svg" class="right-arrow"></a>
     </div>
     
     <div class="grid10">
         <div class="grid-item10">
-            <img src="house of music cover.webp">
+            <img src="public/imgs/music2.jpg">
         </div>
         <div class="grid-item10">
-                <img src="music2.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/house of music cover.webp">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music3.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music3.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music4.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music4.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music5.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music5.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music6.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music6.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music7.jpg">
+                <img src="public/imgs/music7.jpg">
         </div>
         <div class="grid-item10">
-            <img src="music8.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music8.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music9.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music9.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music10.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music10.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music11.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music11.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music12.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music12.jpg">
+            </section>
         </div>
         <div class="grid-item10">
-            <img src="music13.jpg">
+            <section class="section fadeup">
+                <img src="public/imgs/music13.jpg">
+            </section>
         </div>
         
     </div>
     <script src="script.js"></script>
-</div>
-    <a href="https://www.instagram.com/sou_fujimoto/"><img src="instagram.svg" class="instagram"></a>
+
+    <a href="https://www.instagram.com/sou_fujimoto/"><img src="public/imgs/instagram.svg" class="instagram"></a>
 </body>
 </html>

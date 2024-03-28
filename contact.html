@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            animation: fadeInAnimation ease 1.25s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+  
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div id="page-animation">
+<nav>
     <a href="/menu.html" class="grid-menu-icon">
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-1"></div>
+          <div class="square square-2"></div>
+          <div class="square square-3"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-4"></div>
+          <div class="square square-5"></div>
+          <div class="square square-6"></div>
         </div>
         <div class="row">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
+          <div class="square square-7"></div>
+          <div class="square square-8"></div>
+          <div class="square square-9"></div>
         </div>
+        <style id="logoStyles"></style>
       </a>
-      <a href="home.html"><h1 class="h1">SOU FUJIMOTO</h1></a>
+      <a href="home.html"><h1 class="h1">SOU FUJIMOTO ARCHITECTS</h1></a>
+</nav>
     
     <h1 class="contact">CONTACT</h1>
-
+<div class="contact-parent">
     <div class="tokyo-info">
         <h1 class="tokyo">TOKYO</h1>
-        <div class="tokyo-address">
             <p>Senju Soko No.5, 2-1-38 Etchujima, Koto-ku, Tokyo, 135-0044 Japan</p>
-        </div>
-        <div class="tokyo-num">
             <p>Tel: +81-3-5875-8990</p>
-        </div>
     </div>
-
     <div class="paris-info">
         <h1 class="paris">PARIS</h1>
-        <div class="paris-address">
             <p>3 rue de la Chapelle, 75018 Paris, France</p>
-        </div>
-        <div class="paris-num">
             <p>Tel: +33-1-4206-0950</p>
-        </div>
     </div>
-
+</div>
     <p class="email-heading">If you want to contact us, please send an e-mail to one of the following addresses.</p>
 
 <div class="client">
     <h1 class="client-heading">CLIENTS</h1>
+<section class="section fadeup">
     <p>If you are planning a project and would like more information about our company, please contact us at:</p>
     <p class="client-email">project@sou-fujimoto.net</p>
 </div>
+</section>
 
 <div class="media">
     <h1 class="media-heading">MEDIA</h1>
+<section class="section fadeup">
     <p>If you require press information about us and our projects, please contact us at:</p>
     <p class="media-email">media@sou-fujimoto.net</p>
 </div>
+</section>
+
 
 <div class="recruit">  
     <h1 class="recruit-heading">RECRUIT</h1>
+<section class="section fadeup">
     <p>If you wish to apply for employment, please contact us at:</p>
     <p class="recruit-email">recruit@sou-fujimoto.net</p>
 </div>
+</section>
 
     <script src="script.js"></script>
-</div>
-    <a href="https://www.instagram.com/sou_fujimoto/"><img src="instagram.svg" class="instagram"></a>
+
+    <a href="https://www.instagram.com/sou_fujimoto/"><img src="public/imgs/instagram.svg" class="instagram"></a>
 </body>
 </html>
