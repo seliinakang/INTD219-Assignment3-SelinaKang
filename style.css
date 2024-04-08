@@ -8,7 +8,7 @@ body {
   position: relative;
   background-color: #F5F5F5;
   overflow-x: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 footer {
@@ -119,10 +119,14 @@ nav {
   display: flex;
   align-items: center;
   width: 100vw;
+  position: fixed;
+  background-color: #F5F5F5;
+  top: 0;
+  height: 190px;
+  z-index: 100;
 }
 
 .cover-container {
-  margin-top: -100px;
   margin-bottom: 100px;
 }
 
@@ -130,7 +134,7 @@ nav {
   width: calc(100% - 320px);
   margin-left: 160px;
   margin-right: 160px;
-  margin-top: 250px;
+  margin-top: 200px;
   max-width: 100%;
   align-items: center;
 }
@@ -244,6 +248,7 @@ nav {
   font-weight: 400;
   margin-top: 100px;
   margin-left: 100px;
+  margin-top: 200px;
 }
 
 .about-container {
@@ -269,7 +274,7 @@ nav {
 .contact {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 100px;
 }
 
@@ -303,8 +308,8 @@ nav {
 }
 
 .email-heading {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
   margin-left: 100px;
   margin-top: 70px;
 }
@@ -369,8 +374,9 @@ nav {
   height: auto;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 250px;
 }
 
 .grid-item {
@@ -394,8 +400,9 @@ nav {
 .title1 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 100px;
+
 }
 
 .place1 {
@@ -416,7 +423,7 @@ nav {
   font-weight: 300;
   width: 700px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 400px;
   line-height: 1.75;
 }
@@ -443,7 +450,7 @@ nav {
 .title2 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
   width: 500px;
 }
@@ -466,7 +473,7 @@ nav {
   font-weight: 300;
   width: 550px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 650px;
   line-height: 1.75;
 }
@@ -493,7 +500,7 @@ nav {
 .title3 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
 }
   
@@ -515,7 +522,7 @@ nav {
   font-weight: 300;
   width: 600px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 500px;
   line-height: 1.75;
 }
@@ -542,7 +549,7 @@ nav {
 .title4 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
 }
 
@@ -564,7 +571,7 @@ nav {
   font-weight: 300;
   width: 800px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 400px;
   line-height: 1.75;
 }
@@ -591,7 +598,7 @@ nav {
 .title5 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
   width: 400px;
 }
@@ -614,7 +621,7 @@ nav {
   font-weight: 300;
   width: 600px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 550px;
   line-height: 1.75;
 }
@@ -641,7 +648,7 @@ nav {
 .title6 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
   width: 400px;
 }
@@ -664,7 +671,7 @@ nav {
   font-weight: 300;
   width: 650px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 550px;
   line-height: 1.75;
 }
@@ -691,7 +698,7 @@ nav {
 .title7 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
   width: 400px;
 }
@@ -714,7 +721,7 @@ nav {
   font-weight: 300;
   width: 700px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 550px;
   line-height: 1.75;
 }
@@ -741,7 +748,7 @@ nav {
 .title8 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
   width: 400px;
 }
@@ -764,7 +771,7 @@ nav {
   font-weight: 300;
   width: 700px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 525px;
   line-height: 1.75;
 }
@@ -791,7 +798,7 @@ nav {
 .title9 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
 }
 
@@ -813,7 +820,7 @@ nav {
   font-weight: 300;
   width: 700px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 500px;
   line-height: 1.75;
 }
@@ -840,7 +847,7 @@ nav {
 .title10 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
 }
 
@@ -862,7 +869,7 @@ nav {
   font-weight: 300;
   width: 700px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 500px;
   line-height: 1.75;
 }
@@ -889,7 +896,7 @@ nav {
 .title11 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
   width: 400px;
 }
@@ -912,7 +919,7 @@ nav {
   font-weight: 300;
   width: 700px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 450px;
   line-height: 1.75;
 }
@@ -939,7 +946,7 @@ nav {
 .title12 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
   width: 300px;
 }
@@ -963,7 +970,7 @@ nav {
   font-weight: 300;
   width: 600px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 550px;
   line-height: 1.75;
 }
@@ -990,7 +997,7 @@ nav {
 .title13 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
 }
 
@@ -1012,7 +1019,7 @@ nav {
   font-weight: 300;
   width: 700px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 400px;
   line-height: 1.75;
 }
@@ -1039,7 +1046,7 @@ nav {
 .title14 {
   font-size: 36px;
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
   width: 300px;
 }
@@ -1062,7 +1069,7 @@ nav {
   font-weight: 300;
   width: 650px;
   position: absolute;
-  top: 190px;
+  top: -5px;
   left: 500px;
   line-height: 1.75;
 }
@@ -1846,5 +1853,196 @@ nav {
 
   footer {
     display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+  .menu {
+    margin-left: 250px;
+    margin-top: 200px;
+  }
+
+  .menu-item {
+    font-size: 30px;
+  }
+
+  .back-button {
+    top: -80px
+  }
+
+  .arrow-container {
+    margin-top: 80px;
+    width: 1300px;
+    justify-content: space-between;
+  }
+
+  .des1 {
+    width: 900px;
+    margin-left: 80px;
+  }
+
+  .des2 {
+    width: 700px;
+    margin-left: 80px;
+  }
+
+  .des3 {
+    width: 800px;
+    margin-left: 50px;
+  }
+
+  .des4 {
+    width: 900px;
+    margin-left: 80px;
+  }
+
+  .des5 {
+    width: 700px;
+    margin-left: 80px;
+  }
+
+  .des6 {
+    width: 700px;
+    margin-left: 80px;
+  }
+
+  .des7 {
+    width: 800px;
+    margin-left: 80px;
+  }
+
+  .des8 {
+    width: 900px;
+    margin-left: 80px;
+  }
+
+  .des9 {
+    width: 900px;
+    margin-left: 80px;
+  }
+
+  .des10 {
+    width: 900px;
+    margin-left: 50px;
+  }
+
+  .title11 {
+    width: 450px;
+  }
+
+  .des11 {
+    width: 650px;
+    margin-left: 160px;
+  }
+
+  .des12 {
+    width: 700px;
+    margin-left: 80px;
+  }
+
+  .des13 {
+    width: 900px;
+    margin-left: 50px;
+  }
+
+  .des14 {
+    width: 850px;
+    margin-left: 50px;
+  }
+
+  .paris-info {
+    margin-left: 200px;
+  }
+  .email-heading {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .client {
+    width: 400px;
+    font-size: 18px;
+  }
+
+  .client-heading {
+    font-size: 30px;
+  }
+
+  .media {
+    width: 350px;
+    padding-left: 120px;
+    font-size: 18px;
+    margin-top: -210px;
+  }
+
+  .media-heading {
+    font-size: 30px;
+  }
+
+  .recruit-heading {
+    font-size: 30px;
+  }
+
+  .recruit {
+    padding-left: 200px;
+    margin-top: -182px;
+    font-size: 18px;
+  }
+
+  .recruit-email {
+    margin-top: 2px;
+  }
+  
+  .tokyo {
+    font-size: 30px;
+  }
+
+  .paris {
+    font-size: 30px;
+  }
+
+  .tokyo-info {
+    font-size: 18px;
+  }
+
+  .paris-info {
+    font-size: 18px;
+  }
+
+  .about-info {
+    font-size: 18px;
+  }
+
+  .portrait {
+    width: 430px;
+    margin-top: -10px;
+  }
+
+  .instagram {
+    bottom: 50px;
+    right: 100px;
+    width: 45px;
+  }
+
+  .newsletter {
+    margin-right: 200px;
+  }
+
+  .h1 {
+    font-size: 36px;
+  }
+
+  .grid-menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .square {
+    width: 8.5px;
+  }
+
+  .grid {
+    max-width: 1000px;
   }
 }
