@@ -1127,7 +1127,7 @@ nav {
   opacity: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
   body {
     margin-left: 50px;
@@ -1314,7 +1314,7 @@ nav {
 
   .portrait {
     float: none;
-    width: 365px;
+    width: 330px;
     height: auto;
     margin-left: -25px;
     margin-right: -25px;
